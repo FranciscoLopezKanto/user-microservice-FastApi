@@ -11,7 +11,7 @@ Este proyecto implementa un microservicio de usuarios usando FastAPI y MongoDB, 
 
 1. Clonar el repositorio:
     ```bash
-    git clone https://github.com/tu_usuario/user-microservice-FastAPI.git
+    git clone https://github.com/FranciscoLopezKanto/user-microservice-FastApi
     cd user-microservice-FastAPI
     ```
 

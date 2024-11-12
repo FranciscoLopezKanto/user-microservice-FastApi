@@ -1,6 +1,12 @@
 from fastapi import FastAPI
-from .routes import router as user_router
+from .database import create_indexes
+from .routes import router
 
 app = FastAPI()
 
-app.include_router(user_router, prefix="/api")
+@app.on_event("startup")
+async def on_startup():
+    # Crear los índices al iniciar la aplicación
+    await create_indexes()
+
+app.include_router(router)

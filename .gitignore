@@ -1,0 +1,13 @@
+# Entornos virtuales
+venv/
+__pycache__/
+*.pyc
+
+# Archivos de entorno
+.env
+
+# Logs
+*.log
+
+# Archivos de Docker
+docker-compose.override.yml
